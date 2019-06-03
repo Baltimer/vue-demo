@@ -2,6 +2,7 @@ export default {
     "es": {
         "hello": "Hola",
         "home": "Inicio",
-        "about": "Sobre mi"
+        "about": "Sobre mi",
+        "services": "Servicios"
     }
 }
