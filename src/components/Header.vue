@@ -10,8 +10,8 @@
       <ul class="nav__menu">
         <router-link to="/" tag="li">{{ $t('home') }}</router-link>
         <router-link to="/about" tag="li">{{ $t('about') }}</router-link>
-        <li>
-          <ul class="dropdown"> {{ $t('services') }}
+        <li>{{ $t('services') }}
+          <ul class="dropdown"> 
             <router-link to="#" tag="li">{{ $t('services') }}</router-link>
             <router-link to="#" tag="li">{{ $t('services') }}</router-link>
             <router-link to="#" tag="li">{{ $t('services') }}</router-link>
@@ -76,37 +76,33 @@ export default {
       padding: 0px;
       cursor: pointer;
       list-style: none;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      transition: all 1.5s ease;
+      padding-top: 0.3rem;
+      left: auto;
+      display: none;
+      background-color: white;
       li {
         display: block;
-        transition-duration: 0.5s;
+        transition-duration: 1.5s;
+        margin: 0px;
+        padding: 5px 0px;
         cursor: pointer;
-        ul {
-          visibility: hidden;
-          opacity: 0;
-          position: absolute;
-          transition: all 0.5s ease;
-          margin-top: 1rem;
-          left: 0;
-          display: none;
-          li {
-            clear: both;
-            width: 100%;
-          }
-        }
-      }
-      &:hover > ul, & ul:hover {
-        visibility: visible;
-        opacity: 1;
-        display: block;
-      }
-      &:not(:first-child) {
-        margin-left: 10px;
+        clear: both;
+        width: 100%;
       }
     }
-    li {
+    > li {
       margin: 0px;
       &:not(:first-child) {
         margin-left: 10px;
+      }
+      &:hover > ul, & ul.dropdown:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
       }
     }
   }
