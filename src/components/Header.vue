@@ -12,9 +12,8 @@
         <router-link to="/about" tag="li">{{ $t('about') }}</router-link>
         <li>{{ $t('services') }}
           <ul class="dropdown"> 
-            <router-link to="#" tag="li">{{ $t('services') }}</router-link>
-            <router-link to="#" tag="li">{{ $t('services') }}</router-link>
-            <router-link to="#" tag="li">{{ $t('services') }}</router-link>
+            <router-link to="/activities" tag="li">{{ $t('activities') }}</router-link>
+            <router-link to="/tickets" tag="li">{{ $t('tickets') }}</router-link>
           </ul>
         </li>
       </ul>

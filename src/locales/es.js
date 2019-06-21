@@ -3,6 +3,8 @@ export default {
         "hello": "Hola",
         "home": "Inicio",
         "about": "Sobre mi",
-        "services": "Servicios"
+        "services": "Servicios",
+        "activities": "Actividades",
+        "tickets": "Tickets"
     }
 }

@@ -3,6 +3,8 @@ export default {
         "hello": "Hello",
         "home": "Home",
         "about": "About me",
-        "services": "Services"
+        "services": "Services",
+        "activities": "Activities",
+        "tickets": "Tickets"
     }
 }
